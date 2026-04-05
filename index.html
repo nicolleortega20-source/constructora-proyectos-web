@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Proyectos Topográficos y Construcciones</title>
+    <link rel="stylesheet" href="css/EstilosIndex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+        $(".contenido-bloque").hide();
+
+        // Click en el título
+        $(".bloque").click(function(){
+            $(this).next(".contenido-bloque").slideToggle("slow");
+            $(this).find("svg").toggleClass("rotar");
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+
+<div class="top-bar">
+    <p>RFC: MACC840025F92 | Tel: 449-137-29-71 | Email: protocem@hotmail.com</p>
+</div>
+
+<header>
+
+    <h1>PROYECTOS TOPOGRÁFICOS Y CONSTRUCCIONES</h1>
+    <p>Obra civil, infraestructura y urbanización</p>
+    <img src="img/logo.jpeg" alt="logoempresa">
+
+</header>
+
+<nav>
+    <a href="index.html">| INICIO</a>
+    <a href="servicios.html">| SERVICIOS |</a>
+    <a href="contacto.html">CONTACTO |</a>
+</nav>
+
+
+<div class="contenido">
+  <h2 class="bloque">Proyectos</h2>
+</div>
+
+
+
+
+        <style>
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-texto {
+            padding: 10px;
+            text-align: center;
+        }
+        .card-texto h3 {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .card-texto p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Modal solo CSS */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            padding: 20px 0;
+        }
+        .modal:target {
+            display: flex;
+        }
+        .modal-contenido {
+            background: #fff;
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            border-radius: 8px;
+            position: relative;
+        }
+        .modal-contenido img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #333;
+        }
+    </style>
+
+
+<div class="contenido">
+
+    
+
+    <div class="galeria">
+
+
+        <a href="#modal1" class="card">
+            <img src="img/Carretera.jpeg" alt="Carretera Ags-Calvillo">
+            <div class="card-texto">
+                <h3>Carretera</h3>
+                <p>Ags-Calvillo</p>
+            </div>
+        </a>
+
+        <a href="#modal2" class="card">
+            <img src="img/urbanizacion.jpeg" alt="Urbanización Cd. Argentum">
+            <div class="card-texto">
+                <h3>Urbanización</h3>
+                <p>Cd. Argentum</p>
+            </div>
+        </a>
+
+        <a href="#modal3" class="card">
+            <img src="img/nave.jpeg" alt="Nave Industrial Jesús María">
+            <div class="card-texto">
+                <h3>Nave Industrial</h3>
+                <p>Jesús María</p>
+            </div>
+        </a>
+
+        <a href="#modal4" class="card">
+            <img src="img/Nissan.jpeg" alt="Planta Nissan Ags-Nissan">
+            <div class="card-texto">
+                <h3>Planta Nissan</h3>
+                <p>Ags-Nissan</p>
+            </div>
+        </a>
+
+        <a href="#modal5" class="card">
+            <img src="img/inagua.jpeg" alt="PTAR INAGUA">
+            <div class="card-texto">
+                <h3>Inagua</h3>
+                <p>AGS-INAGUA</p>
+            </div>
+        </a>
+
+        <div style="text-align: center; margin-top: 30px;">
+        <a href="servicios.html" class="btn">Ver todos los proyectos</a>
+    </div>
+
+    </div>
+
+    <!-- Modales con toda la información de cada proyecto -->
+    <div id="modal1" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar">&times;</a>
+            <img src="img/Carretera.jpeg" alt="Carretera Ags-Calvillo">
+            <h3>Ampliación Carretera Ags-Calvillo</h3>
+            <p>Se realizó la ampliación del tramo carretero de 7 m a 10.5 m de ancho, abarcando una longitud de 8.9 km en la comunidad El Maguey, mejorando la conectividad y seguridad vial.</p>
+            <p><b>Monto:</b> $12,442,757</p>
+            <p><b>Duración:</b> 180 días</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar">&times;</a>
+            <img src="img/urbanizacion.jpeg" alt="Urbanización Cd. Argentum">
+            <h3>Cd. Argentum</h3>
+            <p>Construcción de infraestructura urbana que incluyó redes de drenaje pluvial, sanitario y agua potable, así como banquetas y guarniciones dentro del complejo habitacional y comercial.</p>
+            <p><b>Monto:</b> $82,006,741</p>
+            <p><b>Duración:</b> 716 días</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar">&times;</a>
+            <img src="img/nave.jpeg" alt="Nave Industrial Jesús María">
+            <h3>Nave Industrial</h3>
+            <p>Construcción integral de nave industrial que incluyó terracerías, estructura metálica, instalaciones eléctricas, sanitarias y acabados generales.</p>
+            <p><b>Monto:</b> $5,720,000</p>
+            <p><b>Duración:</b> 120 días</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar">&times;</a>
+            <img src="img/Nissan.jpeg" alt="Planta Nissan Ags-Nissan">
+            <h3>Rehabilitación en Planta Nissan</h3>
+            <p>Rehabilitación de red de canales pluviales mediante demolición, reconstrucción de concreto hidráulico y mejora de infraestructura hidráulica y contra incendios.</p>
+            <p><b>Cliente:</b> FUJITA CORP.</p>
+            <p><b>Monto:</b> $114,784,155</p>
+            <p><b>Duración:</b> 390 días</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar">&times;</a>
+            <img src="img/inagua.jpeg" alt="PTAR INAGUA">
+            <h3>Planta de Tratamiento de Aguas Residuales (PTAR)</h3>
+            <p>Construcción de planta de tratamiento con capacidad de 10 L/s, incluyendo obras hidráulicas, estructuras, instalaciones y pruebas operativas.</p>
+            <p><b>Cliente:</b> INAGUA</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="contenido">
+
+    <!-- QUIENES SOMOS -->
+    <h2 class="bloque">
+        <span><b>¿Quiénes Somos?</b></span>
+        <svg width="18" height="19" fill="orange">
+            <path d="M9 14.469L1 6.46897L1.96897 5.5L9 12.531L16.031 5.5L17 6.46897L9 14.469Z"/>
+        </svg>
+    </h2>
+    <div class="contenido-bloque">
+
+    <div class="imagen-box quienes">
+
+        <img src="img/QuienesSomos.jpg" alt="Construcción">
+
+        <div class="texto-overlay lado-derecho">
+            <p>
+            Somos una empresa dedicada a la construcción de obra civil,
+            especializada en naves industriales, carreteras, urbanización
+            e infraestructura hidráulica y eléctrica.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- MISION -->
+    <h2 class="bloque">
+        <span><b>Misión</b></span>
+        <svg width="18" height="19" fill="orange">
+            <path d="M9 14.469L1 6.46897L1.96897 5.5L9 12.531L16.031 5.5L17 6.46897L9 14.469Z"/>
+        </svg>
+    </h2>
+   <div class="contenido-bloque">
+
+    <div class="imagen-box mision">
+        <img src="img/Mision.jpg" alt="Misión">
+
+        <div class="texto-overlay lado-derecho">
+            <p>
+            Brindar servicios de construcción con calidad, seguridad y compromiso, cumpliendo con los requerimientos de cada cliente.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+    <!-- VISION -->
+    <h2 class="bloque">
+        <span><b>Visión</b></span>
+        <svg width="18" height="19" fill="orange">
+            <path d="M9 14.469L1 6.46897L1.96897 5.5L9 12.531L16.031 5.5L17 6.46897L9 14.469Z"/>
+        </svg>
+    </h2>
+    <div class="contenido-bloque">
+
+    <div class="imagen-box vision">
+
+        <img src="img/Vision.jpg" alt="Visión">
+
+        <div class="texto-overlay lado-izquierdo">
+            <p>
+            Ser una empresa líder en el sector de la construcción a nivel regional,
+            destacando por nuestra excelencia y profesionalismo.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- CONTACTO -->
+    <h2 class="bloque">
+        <span><b>Contáctanos</b></span>
+        <svg width="18" height="19" fill="orange">
+            <path d="M9 14.469L1 6.46897L1.96897 5.5L9 12.531L16.031 5.5L17 6.46897L9 14.469Z"/>
+        </svg>
+    </h2>
+    <div class="contenido-bloque">
+
+    <div class="imagen-box contacto">
+
+        <img src="img/Contactactanos.png" alt="Contacto">
+
+        <div class="texto-overlay centro">
+            <p>Solicita tu cotización sin compromiso y lleva tu proyecto al siguiente nivel.</p>
+
+            <a href="contacto.html" class="btn-contacto">Contacto</a>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<div class="contenido">
+
+    <!-- SERVICIOS -->
+    <h2 class="bloque">
+        <span><b>Servicios principales </b></span>
+        <svg width="18" height="19" fill="orange">
+            <path d="M9 14.469L1 6.46897L1.96897 5.5L9 12.531L16.031 5.5L17 6.46897L9 14.469Z"/>
+        </svg>
+    </h2>
+    <div class="contenido-bloque">
+
+    <div class="imagen-box servicios">
+
+        <img src="img/ServiciosPrincipales.jpg" alt="Servicios">
+
+        <div class="texto-overlay centro">
+            <ul>
+                <li>Construcción de naves industriales</li>
+                <li>Infraestructura carretera</li>
+                <li>Urbanización</li>
+                <li>Instalaciones hidráulicas y eléctricas</li>
+                <li>Topografía</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- EXPERIENCIA -->
+    <h2 class="bloque">
+        <span><b>Experiencia </b></span>
+        <svg width="18" height="19" fill="orange">
+            <path d="M9 14.469L1 6.46897L1.96897 5.5L9 12.531L16.031 5.5L17 6.46897L9 14.469Z"/>
+        </svg>
+    </h2>
+    <div class="contenido-bloque">
+
+    <div class="imagen-box experiencia">
+
+        <img src="img/Experiencia.jpg" alt="Experiencia">
+
+        <div class="texto-overlay lado-derecho">
+            <p>Contamos con experiencia en proyectos importantes como:</p>
+
+            <ul>
+                <li>Construcción de pavimentos</li>
+                <li>Plantas de tratamiento de agua</li>
+                <li>Urbanización de fraccionamientos</li>
+                <li>Obras industriales</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+<div class="bloque2">
+
+<nav>
+    <a href="index.html">| INICIO</a>
+    <a href="servicios.html">| SERVICIOS |</a>
+    <a href="contacto.html">CONTACTO |</a>
+</nav>
+
+<div class="pie">
+    <p>📍 J. ENCARNACION PAYEN #515 FRACC. OLIVARES SANTANA, AGUASCALIENTES, AGS</p>
+    <p>📞 449-137-29-71</p>
+    <p>📧 protocem@hotmail.com</p>
+    <p>CED. PROFESIONAL NO. 6151593</p>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+
+.top-bar {
+    background: #f39c12;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+header {
+    background-color: #21325e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 5px 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+header img {
+    margin-top: 10px;
+    width: 500px;
+
+}
+
+
+nav {
+    background-color: #f39c12;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    position: relative;
+    height: 200px;
+    background-image: url("../constructora.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero-texto h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+.btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+
+
+
+.bloque {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #f39c12;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.bloque span {
+    vertical-align: middle;
+}
+
+.bloque svg {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+
+
+footer {
+    background-color: #21325e;
+    color: white;
+    margin-top: 30px;
+}
+
+footer nav {
+    background-color: #f39c12;
+}
+
+.pie {
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* SOLO PARA LOS BLOQUES DESPLEGABLES */
+.contenido .bloque,
+.contenido .contenido-bloque {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenido-bloque {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.bloque:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+
+.imagen-box {
+    position: relative;
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+.imagen-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.quienes img {
+    object-position: left 25%;
+}
+
+/* MISION */
+.mision img {
+    object-position: left 30%;
+}
+
+.contacto {
+    height: 300px;
+}
+
+.contacto img {
+    object-position: center 20%;
+}
+
+.btn-contacto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background: #1c029b; /* amarillo de tu estilo */
+    color: #ffffff;
+
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-contacto:hover {
+    background: #da7c02;
+}
+
+/* TEXTO */
+.texto-overlay {
+    position: absolute;
+    color: white;
+}
+
+/* POSICIÓN A LA DERECHA  */
+.lado-derecho {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+
+    background: rgba(0, 0, 0, 0.55);
+    padding: 15px;
+    border-radius: 8px;
+
+    max-width: 300px;
+}
+
+/* TEXTO */
+.texto-overlay p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* TEXTO A LA IZQUIERDA */
+.lado-izquierdo {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+
+    max-width: 350px;
+}
+
+.servicios {
+    height: 350px; /* más alta que las demás */
+}
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+.centro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.centro li::before {
+    content: "■";
+    color: #FACC15;
+    margin-right: 8px;
+    font-size: 10px;
+}
+
+.centro li {
+    margin: 8px 0;
+}
+.servicios img {
+    object-position: center;
+}
+
+.experiencia img {
+    object-position: left 70%;
+}
+
+.texto-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.texto-overlay li {
+    margin: 6px 0;
+}
+
+.texto-overlay li::before {
+    content: "■";
+    color: #FACC15;
+    margin-right: 8px;
+    font-size: 10px;
+}
+
+
+.texto-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+.texto-overlay li {
+    margin: 6px 0;
+}
+
+.texto-overlay li::before {
+    content: "■";
+    color: #FACC15;
+    margin-right: 8px;
+    font-size: 10px;
+}
+
+.formulario-moderno {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: rgba(20, 20, 97, 0.995);
+    backdrop-filter: blur(6px);
+
+    border-radius: 12px;
+}
+
+
+.formulario-moderno h2 {
+    text-align: center;
+    color: #fba905;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* LABEL */
+.formulario-moderno label {
+    color: #e5e5e5;
+    font-size: 13px;
+}
+
+/* INPUTS */
+.formulario-moderno input,
+.formulario-moderno textarea {
+    width: 100%;
+    margin: 8px 0 15px 0;
+    padding: 8px 5px;
+
+    border: none;
+    border-bottom: 1px solid #aaa;
+
+    background: transparent;
+    color: white;
+}
+
+
+.formulario-moderno input:focus,
+.formulario-moderno textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #FACC15;
+}
+
+.formulario-moderno button {
+    display: block;
+    margin: 20px auto 0;
+
+    padding: 10px 25px;
+    background: #fa7c15;
+    color: rgb(0, 0, 0);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formulario-moderno button:hover {
+    background: #ea7508;
+}
+
+
+.bloque {
+  text-align: center;
+}
+
+
+
+.galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #000;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-texto {
+            padding: 10px;
+            text-align: center;
+        }
+        .card-texto h3 {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .card-texto p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Modal solo CSS */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            padding: 20px 0;
+        }
+        .modal:target {
+            display: flex;
+        }
+        .modal-contenido {
+            background: #fff;
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            border-radius: 8px;
+            position: relative;
+        }
+        .modal-contenido img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #333;
+        }
+        
+        .galeria-modal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria-modal img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.galeria-modal img:hover {
+    transform: scale(1.05);
+}
+
+.modal-contenido {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    max-width: 900px;
+    max-height: 80vh; /* alto máximo visible en la pantalla */
+    width: 90%;
+    overflow-y: auto; /* activa scroll vertical si hay muchas imágenes */
+    text-align: center;
+    border-radius: 8px;
+}
